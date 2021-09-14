@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section>
+    <header>
+        <h2>Calculate Result</h2>
+    </header>
+    <div class="result-area">
+        <div class="input-area">
+            <h3>Enter numbers to see the result:</h3>
+            <form action="">
+                <div class="bangla">
+                    <label for="bangla">Bangla</label>
+                    <input type="number" id="bangla">
+                </div>
+                <div class="english">
+                    <label for="english">English</label>
+                    <input type="number" id="english">
+                </div>
+                <div class="math">
+                    <label for="math">Mathematics</label>
+                    <input type="number" id="math">
+                </div>
+                <div class="science">
+                    <label for="science">Science</label>
+                    <input type="number" id="science">
+                </div>
+                <div class="religion">
+                    <label for="religion">Religion</label>
+                    <input type="number" id="religion">
+                </div>
+                <input type="submit" class="effects" value="See Result" id="submit-btn">
+            </form>
+        </div>
+        <div class="output-area">
+            <h3>Result :</h3>
+            <table >
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="display-result"></tbody>
+            </table>
+            <h4>Total marks : <span id="total-marks"></span></h4>
+            <h4>Your Grade is : <span id="Grade"></span></h4>
+        </div>
+        
+    </div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
